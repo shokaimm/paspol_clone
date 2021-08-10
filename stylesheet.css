@@ -1,0 +1,19 @@
+.title{
+    color: #02ccba;
+}
+.header{
+    background-color: #fdd700;
+    height:70px;
+}
+.main{
+    background-color: hsl(175, 34%, 35%);
+    height:1000px;
+    background-image:url("background.jpeg");
+    width:1000px;
+    margin: 0 auto;
+    background-size:cover;
+}
+.footer{
+    background-color:black;
+    height:40px;
+}
