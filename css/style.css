@@ -5,7 +5,7 @@ html{
 }
 
 body{
-	font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
     background-color: #fff;
     color: #13191b;
     line-height: 1.7;
@@ -99,6 +99,17 @@ a:active {
     background-position: 0 bottom;
 	background-image: url("../images/mainVisual-overlay@2x.png");
 	background-repeat: no-repeat;
+}
+
+.main-visual .allow{
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	bottom: 64px;
+	left: 49.6%;
+	border-left: 2px solid white;
+	border-bottom: 2px solid white;
+	transform: rotate(-45deg);
 }
 
 .main-text{
@@ -240,7 +251,7 @@ a:active {
 
 .product .product-item-container .product-item:hover{
 	transition: 0.3s;
-	opacity: 0.6; filter: brightness(110%);
+	opacity: 0.7; filter: brightness(110%);
 }
 
 .product .product-item-container .product-item img{
@@ -258,7 +269,7 @@ a:active {
 }
 
 .news{
-	padding-bottom: 10px;
+	padding-bottom: 100px;
 }
 
 .news .nw-item{
@@ -269,7 +280,7 @@ a:active {
 
 .news .nw-item:hover {
 	transition: 0.3s;
-	opacity: 0.6; filter: brightness(110%);
+	opacity: 0.7; filter: brightness(110%);
 }
 
 .news .nw-item img{
@@ -334,22 +345,29 @@ a:active {
 
 .links{
 	width: 100%;
-	padding-bottom: 30px;
 }
 
 .links .link-to-top{
 	text-align: center;
-	padding: 30px 0;
+	position: relative;
 }
 
 .links .link-to-top a{
-	
 	display: inline-block;
+	position: absolute;
+	top: -20px;
 	width: 13px;
 	height: 13px;
 	border-top: 0.5px solid black;
 	border-right: 0.5px solid black;
-	transform:rotate(-45deg)
+	transform:rotate(-45deg);
+	transition: 0.3s;
+}
+
+.links .link-to-top a:hover{
+	position: absolute;
+	top: -25px;
+	transition: 0.3s;
 }
 
 .links .link-container{
@@ -357,6 +375,7 @@ a:active {
 	justify-content: space-between;
 	display: flex;
 	margin: 0 auto;
+	padding: 30px 0;
 }
 
 .links .link-container .link-to-facebook,
